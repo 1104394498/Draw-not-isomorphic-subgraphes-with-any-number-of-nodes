@@ -22,10 +22,15 @@ for nodeNum in range(0,Constant.N+1):
             Constant.allMatrix.append(Matrix.getMatrix(newGraph))
             print(Matrix.getMatrix(newGraph))
 
+print('所有子图：')
+graphNo = 0
 for M in Constant.allMatrix:
+    graphNo += 1
+    print('第%d个图：'%graphNo)
     DrawGraph.drawgraph(M)
 
 print('共有{}个图'.format(len(Constant.allGraphes)))
+
 
 
 
